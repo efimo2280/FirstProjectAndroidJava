@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/second_student"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                                   Лодочка\n\nЛодочка - это упражнение с весом для собственного тела, в котором используется изометрическая нагрузка при вытянутом положении позвоночника.
+            \n\nПреимущества
+\nВ упражнении задействованы мышцы задней части тела - Ягодичные, разгибатели позвоночника и мышцы верха спины.
+Выполняется для активации мышц и развития подвижности.\n\nТехника выполнения\n\n
+1. Лягте лицом вниз на пол или гимнастический коврик. Вытяните руки перед собой. Это стартовая позиция.\n\n
+2. Одновременно поднимите руки, ноги и грудь над полом и задержитесь в этом положении на 2 секунды, сделав выдох.
+Совет: для лучшего эффекта от упражнения хорошо сократите поясничные мышцы спины.\n\n
+3. Делая вдох, медленно опустите руки, ноги и грудь в стартовую позицию.\n\n
+4.Выполните рекомендуемое количество повторений
+3 подхода по 15-20 повторений."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

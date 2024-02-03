@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fifth_kachalka"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                   Приседания с гантелями\n\nПриседания с гантелями — это классическое упражнение для мышц нижней части тела, с акцентом на проработку квадрицепса.
+
+И хотя приседания со штангой более популярны, некоторые атлеты используют эту альтернативу.
+
+Технику движения легко освоить, а блочная конструкция помогает легко варьировать нагрузку, переставляя стержень на нужный вес.
+            \n\nПреимущества
+\n1)Укрепляет мышцы ног.
+\n2)Сжигает много калорий.
+\n3)Не создает тяжелой нагрузки на верх спины.
+
+\n\nТехника выполнения\n\n
+1. Стойте ровно, удерживая гантели в руках по бокам корпуса. Поставьте ноги на ширине плеч и разверните носки немного в стороны. Взгляд направлен перед собой. Спина ровная, а мышцы пресса напряжены. Это будет стартовая позиция.\n\n
+2. Медленно приседайте, сгибая ноги в коленях и отводя таз назад. Продолжайте, пока бедра не будут параллельны полу. Подсказка: пятки не отрываются от пола. Если переносить вес тела на носки, коленный сустав перегружается и вы рискуете получить травму.\n\n
+3. Делая выдох, разгибайте ноги, направляя усилие через пятки, и вернитесь в исходную позицию.\n\n"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.KachalkaFragment">
+
+
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <!-- Добавленная картинка -->
+        <ImageView
+            android:id="@+id/exerciseImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fourth_kachalka"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:contentDescription="TODO" />
+
+        <!-- ScrollView вокруг TextView с описанием -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exerciseImage"
+            android:layout_marginTop="34dp">
+
+            <TextView
+                android:id="@+id/exerciseDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="                   Тяга верхнего блока к груди\n\nТяга верхнего блока к груди – это упражнение для проработки мышц спины. Выполняется сидя в блочном тренажере, который присутствует в каждом зале.
+
+Технику движения легко освоить, а блочная конструкция помогает легко варьировать нагрузку, переставляя стержень на нужный вес.
+            \n\nПреимущества
+\n1)Прорабатывает широчайшие мышцы спины.
+\n2)Тросовая система тренажера помогает сохранять постоянную нагрузку в целевых мышцах.
+\n3)Упражнение легко освоить и выполнять даже новичкам.
+
+\n\nТехника выполнения\n\n
+1. Присоедините широкую рукоять к верхнему блоку и настройте фиксатор для ног под свой рост. Он поможет не отрываться от сиденья под воздействием противовеса.\n\n
+2. Возьмитесь за рукоять ладонями сверху, используя хват шире плеч. Удерживая рукоять на прямых руках, сядьте на сидение, разместив колени под валиком. Наклонитесь назад приблизительно на 30 градусов. Выведите грудь вперед, создавая небольшой прогиб в пояснице. Это стартовая позиция.\n\n
+3. Делая выдох, сводите лопатки и сгибайте руки в локтях, опуская рукоять по направлению к верху груди. Корпус остается неподвижным. Не помогайте опускать вес предплечьями, используйте их, чтобы удерживать рукоять.\n\n
+4. В нижней точке движения сделайте секундную паузу. Затем медленно возвращайтесь в стартовую позицию со вдохом. Руки выпрямлены, а широчайшие растянуты."
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </ScrollView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/fourth_cardio"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                                     Берпи\n\nБерпи – это одно из основных движений, используемых в различных высокоинтенсивных и функциональных методиках.
+
+\nОно содержит в себе комбинацию последовательно выполняемых упражнений – планки, отжиманий от пола, приседания и прыжка вверх.
+
+\nУпражнение Берпи комплексное. Оно вовлекает в работу практически все основные мышечные группы, повышая энерготраты до максимальных величин.
+
+\nКак раз поэтому движение часто применяется в методиках, направленных на похудение.
+
+
+
+
+            \n\nПреимущества
+\n1)Прорабатывает много мышечных групп одновременно.
+\n2)Помогает потратить большое количество калорий.
+\n3)Улучшает силу и выносливость.
+
+\n\nТехника выполнения\n\n
+1. Примите исходное положение стоя. Ноги на ширине плеч, прямые руки опущены вдоль туловища.\n\n
+2. Наклонитесь вперед, поставив ладони на пол.\n\n
+3. Одним движением примите упор лежа (планка на прямых руках), отпрыгнув двумя ногами назад.\n\n
+4. Выполните отжимание от пола.\n\n
+5.  Подтяните ноги к груди, сгибая ноги в коленях.\n\n
+6. Выпрямите ноги и корпус, поднимаясь в исходное положение\n\n
+7. В верхней позиции подпрыгните вверх и поднимите прямые руки вверх через стороны (можно выполнить хлопок).\n\n
+8. Опустите руки вниз и повторите упражнение необходимое количество раз"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

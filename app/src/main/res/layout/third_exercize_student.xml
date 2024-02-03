@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/third_student"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                            Выпады на месте\n\nВыпады на месте - упражнение для проработки квадрицепсов, ягодичных мышц и бицепсов бедра.
+\nДвижения усложняются с помощью гантелей, штанги или других утяжелителей.
+\nВыполняется на количество повторений или на время, как часть тренировки ног.
+            \n\nПреимущества
+\n1)Развивает силовые показатели нижней части тела.
+\n2)Улучшает баланс и гибкость бедер.
+\n3)Позволяет проработать каждую ногу по отдельности, что способствует симметричному развитию мышц ног.
+\n\nТехника выполнения\n\n
+1. Встаньте ровно, а затем сделайте одной ногой шаг назад, уперевшись в пол носком. Другая нога стоит впереди. Вес тела равномерно распределен по всей стопе. Плечи расправлены, а спина прямая. Колени слегка согнуты, руки на поясе или скрещены на груди. Это стартовая позиция.\n\n
+2. Опускайтесь вниз, отводя таз назад и сгибая ноги в коленях. В нижней точке колено сзади стоящей ноги будет практически касаться пола. Колено ведущей ноги согнуто под углом 90 градусов. Пятка от пола не отрывается.\n\n
+3. Оттолкнитесь ногой, которая стоит впереди, и поднимитесь вверх, выпрямляя колени.\n\n
+4. Повторите рекомендуемое количество раз и смените сторону."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

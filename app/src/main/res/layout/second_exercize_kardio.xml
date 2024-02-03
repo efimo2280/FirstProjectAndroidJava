@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/second_cardio"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                      Зашагивания на тумбу\n\nВ тренажерном зале есть возможность выполнять самые разные упражнениям для мышц ног.
+
+Среди них зашагивание на тумбу, нам надо высокую скамью или платформу, которое подойдет практически каждому человеку. Оно поможет проработать мышцы бедер и ягодиц, а также потратить большое количество калорий.
+            \n\nПреимущества
+\n1)Прорабатывает мышцы ног и ягодиц.
+\n2)Тренирует выносливость.
+\n3)Помогает скорректировать дисбаланс в мышечном и силовом развитии между разными сторонами.
+
+\n\nТехника выполнения\n\n
+1. Встаньте перед тумбой, скамьей или другой возвышенностью, расправив спину и направляя взгляд вперед.\n\n
+2. Поставьте правую ногу на тумбу, сделайте выдох и поднимитесь вверх на платформу. Усилие направляйте через пятку. В верхней точке приставьте рядом левую ногу. \n\n
+3. Опуститесь вниз, сшагивая левой ногой. Вернитесь в стартовую позицию, возвратив правую ногу на пол, и сделайте вдох.\n\n
+4. Выполните рекомендуемое количество повторений на одну ногу, а затем на другую."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

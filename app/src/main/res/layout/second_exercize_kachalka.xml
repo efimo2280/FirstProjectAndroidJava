@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/second_kachalka"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="            Французский жим с гантелью сидя\n\nФранцузский жим с гантелью сидя – это популярное упражнение для проработки трицепса, в котором гантель поднимается двумя руками из-за головы. Несмотря на то, что упражнение является достаточно тяжелым, оно выполняется в среднем или высоком диапазоне повторений, например 8-12 за сет. Используется как часть тренировки верха тела в целом или рук отдельно. Если хотите поработать с максимальным весом, попросите партнера подать гантель.
+            \n\nПреимущества
+\n1)Увеличивает силу и объем трицепса.
+\n2)Прорабатывает длинную головку трицепса.
+\n3)Прорабатывает трицепс лучше других изолирующих упражнений.
+\n4)Выполняя упражнение сидя, Вы не отвлекаетесь на поддержание равновесия и можете полностью сосредоточиться на технике.
+
+\n\nТехника выполнения\n\n
+1. Сядьте на горизонтальную скамью с поддержкой спины. Держите гантель на вытянутых руках над головой. Попросите партнера подать гантель, особенно если она тяжелая. Держите гантель ладонями за тыльную часть, обхватив пальцами. Это стартовая позиция.\n\n
+2. Направьте локти внутрь и держите их у головы. Руки должны быть перпендикулярны полу. Опускайте гантель по дуге, за голову, пока не коснетесь предплечьями бицепсов. Зафиксируйте руки и двигайте только предплечьями. Делайте вдох в этой фазе движения.\n\n
+3. Делая выдох, вернитесь в стартовую позицию, поднимая гантель за счет трицепсов.\n\n"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

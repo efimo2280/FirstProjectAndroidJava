@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/first_student"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="             Отжимания с локтями у корпуса\n\nОтжимания с локтями у корпуса – это упражнение на верхнюю часть тела, для проработки груди, трицепса и плеч. Узкая постановка рук позволяет сместить нагрузку на трицепсы.
+            \n\nПреимущества
+\n1)Увеличивает общую силу мышц верхней части тела, с акцентом на трицепсы.
+\n2)Укрепляет мышцы кора и устойчивость бёдер.
+\n3)Мышцы нижней части тела задействованы для поддержания статического положения.
+\n4)Добавляя паузы можно менять темп и уровень нагрузки.\n\nТехника выполнения\n\n
+1. Примите упор лежа. Удерживайте вес тела на носках ног. Все тело должно быть на одной линии, смотрите перед собой. Это стартовая позиция.\n\n
+2. Сгибая руки, опускайте корпус, но не касайтесь пола. Сохраняйте тело на одной линии. В нижней позиции локти должны быть направлены назад, руки согнуты под углом 90 градусов.\n\n
+3. Выпрямляя руки, поднимите корпус вверх.\n\n
+4. Выполните необходимое количество повторений. (2 подхода по 10-15 повторений)."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

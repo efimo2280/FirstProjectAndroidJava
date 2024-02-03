@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/fifth_cardio"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                                  Бег на месте\n\nБег на месте — это упражнение, которое решает сразу несколько задач. С его помощью может тренироваться общая и мышечная выносливость, а также тратится энергия, что помогает похудению.
+
+\nУпражнение используют как в качестве разминки, так и как основной элемент интенсивной тренировки.
+
+
+
+
+            \n\nПреимущества
+\n1)Увеличивает энерготраты организма.
+\n2)Может выполняться в любом месте.
+\n3)Повышает тонус ног и ягодичных мышц.
+
+\n\nТехника выполнения\n\n
+1. Поставьте ноги чуть ýже ширины плеч. Руки слегка согнуты в локтях.\n\n
+2. Поочередно поднимайте ноги вверх и опускайтесь вниз, сгибая и разгибая ноги в коленях. При этом руки двигаются вперед и назад, на уровне нижней части живота. Плечи расслаблены.\n\n
+3. Приземляйтесь на носки как можно мягче.\n\n
+4. Спину держите прямо, не допуская сильного наклона туловища вперед, взгляд направлен перед собой."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fourth_student"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                            Подьем ног лежа\n\nПодъем ног лежа на спине — это популярное упражнение с весом собственного тела для проработки прямой мышцы живота.
+\nВыполняется на время или количество повторений, как часть тренировки пресса.
+            \n\nПреимущества
+\n1)Прорабатывает прямую мышцу живота по всей длине.
+\n2)Подходит для работы до отказа в высоком диапазоне повторений.
+\n3)Хорошо сочетается с другими упражнениями на пресс в круговой тренировке.
+\n\nТехника выполнения\n\n
+1. Начните с положения лежа. Ноги выпрямлены, руки вытянуты вдоль корпуса. Это будет стартовая позиция.\n\n
+2. Прижмите поясницу к полу, напрягите пресс и поднимите ноги, сгибая бедра и колени. В верхней точке ноги перпендикулярны полу. В этом положении толкните таз вверх так, чтобы ягодицы оторвались от пола.\n\n
+3. После короткой паузы плавно возвращайтесь в стартовую позицию.
+"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

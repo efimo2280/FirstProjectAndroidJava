@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/first_cardio"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="              Переменная волна с канатами\n\nПеременная волна с канатами – это взрывное упражнение, в котором руки создают волнообразные движения, удерживая канат, прикрепленный к полу. Существует несколько вариантов упражнения, самый распространенный способ — это переменная волна, выполняется с чередованием рук. Можно использовать короткие ускорения для развития силы, выполнять на время для тренировки сердечно-сосудистой системы или как часть круговых тренировок на выносливость и жиросжигание.
+            \n\nПреимущества
+\n1)Мышцы плеч и спины получают хороший памп.
+\n2)Интенсивная силовая и кардио тренировка, развивает силу хвата.
+\n3)Поскольку упражнение направлено на общее развитие тела, нет сильных болевых ощущений в мышцах после тренировки.
+\n4)Много вариантов выполнения: поочередные волны, одновременные волны, круговые, силовые, обратные волны.
+\n\nТехника выполнения\n\n
+1. Для упражнения потребуются канаты, закрепленные с одной стороны, длиной 4-6 метров. Возьмите оба конца каната, держа руки по сторонам. Это стартовая позиция.\n\n
+2. Поднимайте одну руку вверх так быстро, как сможете. \n\n
+3. Резко опуская руку в стартовую позицию, сразу поднимайте противоположную.\n\n
+4. Продолжайте чередовать правую и левую руку так быстро, как можете, создавая волны."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

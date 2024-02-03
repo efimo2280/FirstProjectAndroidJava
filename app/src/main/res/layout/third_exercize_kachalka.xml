@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/third_kachalka"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="          Жим штанги лежа широким хватом\n\nЖим штанги лежа широким хватом – это многосуставное упражнение для проработки груди. В отличие от обычного жима лёжа, используется широкая постановка рук.
+            \n\nПреимущества
+\n1)Прорабатывает грудь лучше, чем обычный жим.
+\n2)Позволяет использовать большие веса.
+\n3)По-другому воздействует на мышцы груди.
+
+\n\nТехника выполнения\n\n
+1. Лягте на скамью и поставьте ноги на пол. Используйте широкую постановку рук с прямым хватом, чтобы снять штангу перед собой. Держите её на прямых руках, перпендикулярно корпусу и полу. Это стартовая позиция. \n\n
+2. Делая вдох, медленно опускайте гриф на середину груди. \n\n
+3.  Сделайте паузу. Делая выдох, возвращайтесь в стартовую позицию, используя мышцы груди. Зафиксируйте снаряд на прямых руках и сделайте паузу. Сократите грудь, затем медленно опускайте штангу. Совет: опускайте штангу в два раза медленнее, чем поднимаете.\n\n"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/fifth_student"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                       Подьем корпуса лежа\n\nПодъем корпуса лежа — это популярное упражнение с весом собственного тела для проработки прямых мышц живота. Его много лет используют как часть военных, тактических и школьных фитнес-тестов.
+\nВыполняется на время или количество повторений, лежа на полу или на скамье.
+            \n\nПреимущества
+\n1)Укрепляет пресс, в частности прямую мышцу живота.
+\n2)В дополнении к прессу прорабатывает сгибатели бедра.
+\n3)Легко усложнить, добавив отягощение или выполняя на наклонной скамье.
+\n\nТехника выполнения\n\n
+1. Лягте на пол, согнув ноги в коленях и удерживая руки за головой. Это стартовая позиция.\n\n
+2. Поднимайте туловище так, чтобы корпус и бедра образовали воображаемую букву V. Сделайте выдох, выполняя движение.\n\n
+3. Как только почувствуете сокращение мышц пресса, задержитесь на секунду, затем опускайтесь в стартовую позицию, делая вдох.\n\n
+4. Сделайте рекомендуемое количество повторений.
+"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

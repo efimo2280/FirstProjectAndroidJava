@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/third_cardio"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                           Джампинг Джек\n\nДжампинг Джек (англ. Jumping jack) — это упражнение, которое часто выполняется на разминке, чтобы разогреть мышцы и связки, а также повысить частоту сердечных сокращений и подготовить к последующей нагрузке.
+
+Это разновидность прыжка на месте вверх, во время которого происходит синхронное разведение ног в стороны и подъем прямых рук над головой (как правило, с хлопком).
+
+Оно подходит скорее для развития выносливости, чем для тренировки мышц, и имеет несколько особенностей.
+
+
+            \n\nПреимущества
+\n1)Упражнение легкое в исполнении.
+\n2)Отлично разогревает все тело.
+\n3)Тренирует выносливость.
+
+\n\nТехника выполнения\n\n
+1. Примите исходное положение стоя. Ноги на ширине плеч. Прямые руки опущены вдоль туловища вниз. Спина ровная.\n\n
+2. Выполните прыжок с двух ног вверх. При этом, ноги разводятся в стороны. Вместе с этим, поднимите прямые руки по дугообразной амплитуде вверх над головой. Движение руками можно закончить хлопком над головой.\n\n
+3. Вернитесь в исходное положение. Чтобы снизить ударную нагрузку на суставы и позвоночник, приземление выполняется со слегка согнутыми коленями и на носки стоп.\n\n
+4. Повторите упражнение необходимое количество повторений."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

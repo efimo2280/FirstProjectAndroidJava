@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Добавленная картинка -->
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/first_kachalka"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO" />
+
+    <!-- ScrollView вокруг TextView с описанием -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseImage"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:id="@+id/exerciseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="      Подъем гантелей на бицепс с супинацией\n\nПодъемы гантелей на бицепс с супинацией — вариация классического изолирующего упражнения для бицепса. Используется в тренировке рук для его акцентированной проработки.
+            \n\nПреимущества
+\n1)Прицельно прорабатывает бицепс
+\n2)Задействует мышцы предплечья и брахиалис.
+\n3)Использование гантелей улучшает нервно-мышечные связи и межмышечную координацию.
+
+\n\nТехника выполнения\n\n
+1. Примите исходное положение стоя. Гантели удерживаются в опущенных руках вдоль туловища. Локти прижаты к телу, а хват нейтральный (ладони повернуты друг к другу).\n\n
+2. Сделайте выдох и согните локти, поднимая гантели. По ходу движения разворачивайте ладони вверх.\n\n
+3. Опускайте гантели, поворачивая ладони друг на друга, и делайте вдох.\n\n
+4. Следите за тем, чтобы локти не смещались вперед."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+</RelativeLayout>

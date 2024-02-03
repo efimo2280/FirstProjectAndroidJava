@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.obuchalka.obuchalka.ui.home.HomeFragment"
+
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_kachalka"
+        android:name="com.obuchalka.obuchalka.ui.dashboard.KachalkaFragment"
+
+        tools:layout="@layout/fragment_kachalka" >
+        <action
+            android:id="@+id/action_navigation_kachalka_to_firstExercizeKachalka"
+            app:destination="@id/firstExercizeKachalka" />
+        <action
+            android:id="@+id/action_navigation_kachalka_to_secondExercizeKachalka"
+            app:destination="@id/secondExercizeKachalka" />
+        <action
+            android:id="@+id/action_navigation_kachalka_to_thirdExercizeKachalka"
+            app:destination="@id/thirdExercizeKachalka" />
+        <action
+            android:id="@+id/action_navigation_kachalka_to_fourthExercizeKachalka"
+            app:destination="@id/fourthExercizeKachalka" />
+        <action
+            android:id="@+id/action_navigation_kachalka_to_fifthExercizeKachalka"
+            app:destination="@id/fifthExercizeKachalka" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_kardio"
+        android:name="com.obuchalka.obuchalka.ui.notifications.KardioFragment"
+
+        tools:layout="@layout/fragment_kardio" >
+        <action
+            android:id="@+id/action_navigation_kardio_to_firstExercizeKardio"
+            app:destination="@id/firstExercizeKardio" />
+        <action
+            android:id="@+id/action_navigation_kardio_to_fourthExercizeKardio"
+            app:destination="@id/fourthExercizeKardio" />
+        <action
+            android:id="@+id/action_navigation_kardio_to_secondExercizeKardio"
+            app:destination="@id/secondExercizeKardio" />
+        <action
+            android:id="@+id/action_navigation_kardio_to_fifthExercizeKardio"
+            app:destination="@id/fifthExercizeKardio" />
+        <action
+            android:id="@+id/action_navigation_kardio_to_thirdExercizeKardio"
+            app:destination="@id/thirdExercizeKardio" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_student"
+        android:name="com.obuchalka.obuchalka.ui.StudentFragment"
+
+        tools:layout="@layout/fragment_student" >
+        <action
+            android:id="@+id/action_navigation_student_to_fourthExercizeStudent"
+            app:destination="@id/fourthExercizeStudent" />
+        <action
+            android:id="@+id/action_navigation_student_to_firstExercizeStudent"
+            app:destination="@id/firstExercizeStudent" />
+        <action
+            android:id="@+id/action_navigation_student_to_thirdExercizeStudent"
+            app:destination="@id/thirdExercizeStudent" />
+        <action
+            android:id="@+id/action_navigation_student_to_secondExercizeStudent"
+            app:destination="@id/secondExercizeStudent" />
+        <action
+            android:id="@+id/action_navigation_student_to_fifthExercizeStudent"
+            app:destination="@id/fifthExercizeStudent" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/firstExercizeKachalka"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.KachalkaExercizeFragment1"
+
+        tools:layout="@layout/first_exercize_kachalka" />
+    <fragment
+        android:id="@+id/secondExercizeKachalka"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.KachalkaExercizeFragment2"
+
+        tools:layout="@layout/second_exercize_kachalka" />
+    <fragment
+        android:id="@+id/thirdExercizeKachalka"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.KachalkaExercizeFragment3"
+
+        tools:layout="@layout/third_exercize_kachalka" />
+    <fragment
+        android:id="@+id/fourthExercizeKachalka"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.KachalkaExercizeFragment4"
+
+        tools:layout="@layout/fourth_exercize_kachalka" />
+
+    <fragment
+        android:id="@+id/fifthExercizeKachalka"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.KachalkaExercizeFragment5"
+
+        tools:layout="@layout/fifth_exercize_kachalka" />
+
+    <fragment
+        android:id="@+id/firstExercizeKardio"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.KardioExercizeFragment1"
+        tools:layout="@layout/first_exercize_kardio" />
+    <fragment
+        android:id="@+id/secondExercizeKardio"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.KardioExercizeFragment2"
+        tools:layout="@layout/second_exercize_kardio" />
+    <fragment
+        android:id="@+id/thirdExercizeKardio"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.KardioExercizeFragment3"
+
+        tools:layout="@layout/third_exercize_kardio" />
+    <fragment
+        android:id="@+id/fourthExercizeKardio"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.KardioExercizeFragment4"
+
+        tools:layout="@layout/fourth_exercize_kardio" />
+
+    <fragment
+        android:id="@+id/fifthExercizeKardio"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.KardioExercizeFragment5"
+
+        tools:layout="@layout/fifth_exercize_kardio" />
+
+
+    <fragment
+        android:id="@+id/firstExercizeStudent"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.StudentExercizeFragment1"
+
+        tools:layout="@layout/first_exercize_student" />
+    <fragment
+        android:id="@+id/secondExercizeStudent"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.StudentExercizeFragment2"
+
+        tools:layout="@layout/second_exercize_student" />
+    <fragment
+        android:id="@+id/thirdExercizeStudent"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.StudentExercizeFragment3"
+
+        tools:layout="@layout/third_exercize_student" />
+    <fragment
+        android:id="@+id/fourthExercizeStudent"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.StudentExercizeFragment4"
+
+        tools:layout="@layout/fourth_exercize_student" />
+    <fragment
+        android:id="@+id/fifthExercizeStudent"
+        android:name="com.obuchalka.obuchalka.ui.exercizes.StudentExercizeFragment5"
+
+        tools:layout="@layout/fifth_exercize_student" />
+
+
+</navigation>
